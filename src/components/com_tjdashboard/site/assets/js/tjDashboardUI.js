@@ -79,7 +79,7 @@ var TJDashboardUI = {
 					widgetHeadingHtml += '<span id="view-all-' + value.dashboard_widget_id + '" class="pull-right"></span></div>';
 				}
 
-				jQuery('<div class="col-xs-' +value.size+'"><div class="widget-data panel '+colorClass+'">' + widgetHeadingHtml + '<div data-dashboard-widget-id="'+value.dashboard_widget_id+'" id="dashboard-widget-'+value.dashboard_widget_id+'" class=""></div></div></div>').appendTo('.dashboard-widget-row-'+j);
+				jQuery('<div class="col-xs-' +value.size+' col-sm-' +value.size+'"><div class="widget-data panel '+colorClass+'">' + widgetHeadingHtml + '<div data-dashboard-widget-id="'+value.dashboard_widget_id+'" id="dashboard-widget-'+value.dashboard_widget_id+'" class=""></div></div></div>').appendTo('.dashboard-widget-row-'+j);
 
 				TJDashboardUI.initWidget(value);
 				i++;
